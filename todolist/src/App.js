@@ -10,21 +10,17 @@ import Card from 'react-bootstrap/Card';
 import card from 'react-bootstrap/card';
 
 
-
-
-
-
 function App() {
   return (
     <div className="App">
         <h1 className="AppBold"style={{paddingTop:"250px", paddingBottom:"60px"}}> 
-        Organize your work  
-        <p>and life, finally.</p>
-          </h1>
+          Organize your work  
+          <p>and life, finally.</p>
+        </h1>
 
-          <Button size="lg" style={{backgroundColor:"#df5a31", color:"#fff", padding:"15px", paddingLeft:"40px", paddingRight:"40px"}}>
+        <Button size="lg" style={{backgroundColor:"#df5a31", color:"#fff", padding:"15px", paddingLeft:"40px", paddingRight:"40px"}}>
             Sign up
-         </Button>
+        </Button>
 
               <div
                 className="image-fluid come-in"
@@ -42,7 +38,9 @@ function App() {
               }}> 
           </div>
           <br/><br/>
-{/* clear:"left" */}
+
+{/* First Container */}
+
       <Container style={{paddingTop:"10%"}}>
             <div style={{textAlign:"left", float:"left", paddingTop:"100px" ,paddingLeft:"10px"}}>
               <h2 className="AppBold" style={{paddingTop:"5%",  textAlign:"left", padding:"10px"}}> 
@@ -64,8 +62,8 @@ function App() {
       </Container>
       
 {/* second container */}
+
       <Container>
-            
             <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2021/03/1728d022d80c229cdc8e7d786e17f008.jpg@1200w_0e.webp" className='come-in'
               style={{width:"70vh", maxWidth:"100%", minHeight:"27px", height:"50vh", border:"solid", borderRadius:"20px", borderColor:"#575757", float:"left"}}/>
               <div style={{textAlign:"left", float:"left", paddingTop:"5%"}}>
@@ -84,17 +82,15 @@ function App() {
                 </p>
               </div>
       </Container>
-              <br/>
 
-             <img src="https://i.etsystatic.com/30544979/r/il/1f9880/3219549903/il_fullxfull.3219549903_n06f.jpg"
-             style = {{maxWidth:"100%", width:"140vh", marginTop:"10%"}}/>
-                <p style={{paddingTop:"50px"}}> Get organized now. </p>
+    <br/>
+          <img src="https://i.etsystatic.com/30544979/r/il/1f9880/3219549903/il_fullxfull.3219549903_n06f.jpg"
+          style = {{maxWidth:"100%", width:"140vh", marginTop:"10%"}}/>
+            <p style={{paddingTop:"50px"}}> Get organized now. </p>
 
           <Button size="lg" style={{backgroundColor:"#df5a31", color:"#fff",padding:"15px", paddingLeft:"40px", paddingRight:"40px", marginBottom:"70px"}}>
-            Sign up
-         </Button>
-
-         
+              Sign up
+          </Button>
 
     </div>
     
