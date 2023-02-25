@@ -6,13 +6,32 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from './Form';
 import Card from 'react-bootstrap/Card';
-
+import image from './images/image.jpg';
 
 function App() {
   return (
     <div className="App">
+      {/* <img src={image}/> */}
 
-        <h1 className="AppBold"style={{paddingTop:"250px", paddingBottom:"60px"}}> 
+            <div
+                className="image-fluid come-in"
+                style={{
+                // backgroundImage: "url('./images/image.jpg')",
+                // backgroundImage: "url('https://wallpapers.com/images/hd/cute-white-aesthetic-of-a-common-daisy-pty14h6b6yr4n9lc.jpg')",
+
+                backgroundImage: "url('https://static.vecteezy.com/system/resources/previews/007/565/380/non_2x/watercolor-floral-background-with-brush-and-floral-frame-for-horizontal-banner-backdrop-wedding-invitation-thank-you-card-wallpaper-free-photo.jpg')",
+                backgroundPosition:"center",
+                backgroundRepeat:"no-repeat",
+                maxWidth:"100%",
+                width: "100%",
+                height:"auto",
+                paddingBottom:"400px",
+                background:"cover",
+                backgroundColor:"pink",
+                marginTop:"100px"
+              }}> 
+          
+        <h1 className="AppBold"style={{paddingTop:"300px", paddingBottom:"60px"}}> 
           Organize your work  
           <p>and life, finally.</p>
         </h1>
@@ -24,8 +43,10 @@ function App() {
         <Button size="lg" style={{backgroundColor:"white", color:"black", padding:"15px", paddingLeft:"40px", paddingRight:"40px", borderColor:"black", marginLeft:"10px"}}>
             Log In
         </Button>
+            
+            </div>
 
-        <div
+        {/* <div
                 className="image-fluid come-in"
                 style={{
                 backgroundImage: "url('https://diaryofajournalplanner.com/wp-content/uploads/2020/03/Bullet-Journal-To-Do-List-2.jpg')",
@@ -40,7 +61,7 @@ function App() {
                 backgroundColor:"#ffd0d7 ",
                 marginTop:"150px",
               }}> 
-          </div>
+          </div> */}
 
               <div
                 className="image-fluid come-in"
@@ -108,8 +129,8 @@ function App() {
       </Container>
               
     <br/>
-          <img src="https://i.etsystatic.com/30544979/r/il/1f9880/3219549903/il_fullxfull.3219549903_n06f.jpg"
-          style = {{maxWidth:"100%", width:"140vh", marginTop:"10%"}}/>
+          <img src="https://marketplace.canva.com/EAEvBwJAMIA/3/0/1600w/canva-pink-gradient-kpop-aesthetic-desktop-wallpaper-0j7aCFW3wOQ.jpg"
+          style = {{maxWidth:"100%", width:"130vh", marginTop:"10%", borderRadius:"20px"}}/>
             <p style={{paddingTop:"50px"}}> Get organized now. </p>
 
           <Button size="lg" style={{backgroundColor:"#df5a31", color:"#fff",padding:"15px", paddingLeft:"40px", paddingRight:"40px", marginBottom:"70px"}}>
