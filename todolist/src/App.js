@@ -1,67 +1,48 @@
 import './App.css';
+import react from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Form from './Form';
-import Card from 'react-bootstrap/Card';
-import image from './images/image.jpg';
+import Navbarr from './Components/Navbarr';
+
 
 function App() {
   return (
     <div className="App">
-      {/* <img src={image}/> */}
+
+      <Navbarr></Navbarr>
 
             <div
                 className="image-fluid come-in"
                 style={{
-                // backgroundImage: "url('./images/image.jpg')",
-                // backgroundImage: "url('https://wallpapers.com/images/hd/cute-white-aesthetic-of-a-common-daisy-pty14h6b6yr4n9lc.jpg')",
-
                 backgroundImage: "url('https://static.vecteezy.com/system/resources/previews/007/565/380/non_2x/watercolor-floral-background-with-brush-and-floral-frame-for-horizontal-banner-backdrop-wedding-invitation-thank-you-card-wallpaper-free-photo.jpg')",
                 backgroundPosition:"center",
                 backgroundRepeat:"no-repeat",
                 maxWidth:"100%",
                 width: "100%",
                 height:"auto",
-                paddingBottom:"400px",
+                paddingBottom:"310px",
                 background:"cover",
                 backgroundColor:"pink",
-                marginTop:"100px"
               }}> 
           
-        <h1 className="AppBold"style={{paddingTop:"300px", paddingBottom:"60px"}}> 
-          Organize your work  
+        <h1 className="AppBold"style={{paddingTop:"400px", paddingBottom:"60px"}}> 
+             Organize your work  
           <p>and life, finally.</p>
+          
         </h1>
-{/* backgroundColor:"#df5a31" */}
-        <Button size="lg" style={{backgroundColor:"#df5a31", color:"#fff", padding:"15px", paddingLeft:"40px", paddingRight:"40px"}}>
+
+        <Button size="lg" style={{backgroundColor:"#df5a31", color:"#fff", padding:"15px", paddingLeft:"40px", paddingRight:"40px"}}
+         className="click">
             Sign up
         </Button>
 
-        <Button size="lg" style={{backgroundColor:"white", color:"black", padding:"15px", paddingLeft:"40px", paddingRight:"40px", borderColor:"black", marginLeft:"10px"}}>
+        <Button size="lg" style={{backgroundColor:"white", color:"black", padding:"15px", paddingLeft:"40px", paddingRight:"40px", borderColor:"black", marginLeft:"10px"}}
+          className="click">
             Log In
         </Button>
             
             </div>
-
-        {/* <div
-                className="image-fluid come-in"
-                style={{
-                backgroundImage: "url('https://diaryofajournalplanner.com/wp-content/uploads/2020/03/Bullet-Journal-To-Do-List-2.jpg')",
-                backgroundPosition:"center",
-                backgroundRepeat:"no-repeat",
-                maxWidth:"100%",
-                width: "100%",
-                height:"auto",
-                paddingTop:"300px",
-                paddingBottom:"500px",
-                background:"cover",
-                backgroundColor:"#ffd0d7 ",
-                marginTop:"150px",
-              }}> 
-          </div> */}
 
               <div
                 className="image-fluid come-in"
@@ -74,7 +55,6 @@ function App() {
                 height:"auto",
                 paddingBottom:"120px",
                 background:"cover",
-                // backgroundColor:"pink",
                 marginTop:"100px",
               }}> 
           </div>
@@ -98,9 +78,10 @@ function App() {
                   dates.
                 </p>
               </div>
-            <img src="https://d33wubrfki0l68.cloudfront.net/ec621e304136ab6d4f3220e6d89019fd9341e86b/78171/images/ghost/2022-08-22-how-to-set-your-notion-to-do-list-as-desktop-wallpaper-automatically-free-notion-template/10.png" className="come-in"
-            style={{width:"70vh", maxWidth:"100%", minHeight:"27px", height:"50vh",marginBottom:"130px", border:"solid", borderRadius:"20px", borderColor:"#575757", float:"right"
-            }}
+              <img src="https://d33wubrfki0l68.cloudfront.net/ec621e304136ab6d4f3220e6d89019fd9341e86b/78171/images/ghost/2022-08-22-how-to-set-your-notion-to-do-list-as-desktop-wallpaper-automatically-free-notion-template/10.png" 
+                className="come-in"
+                style={{width:"70vh", maxWidth:"100%", minHeight:"27px", height:"50vh",marginBottom:"130px", border:"solid", borderRadius:"20px", borderColor:"#575757", float:"right"
+                }}
             /> 
       </Container>
 
@@ -129,14 +110,18 @@ function App() {
       </Container>
               
     <br/>
-          <img src="https://marketplace.canva.com/EAEvBwJAMIA/3/0/1600w/canva-pink-gradient-kpop-aesthetic-desktop-wallpaper-0j7aCFW3wOQ.jpg"
-          style = {{maxWidth:"100%", width:"130vh", marginTop:"10%", borderRadius:"20px"}}/>
-            <p style={{paddingTop:"50px"}}> Get organized now. </p>
+        <img src="https://wallpaperset.com/w/full/a/4/1/266441.jpg"
+          style = {{maxWidth:"100%", width:"150vh", marginTop:"10%", borderRadius:"20px"}}
+          />
 
-          <Button size="lg" style={{backgroundColor:"#df5a31", color:"#fff",padding:"15px", paddingLeft:"40px", paddingRight:"40px", marginBottom:"70px"}}>
-              Sign up
+          <div style={{border:"solid whitesmoke", borderRadius:"20px"}}> </div>
+          
+        <p style={{paddingTop:"8%"}}> Get organized now. </p>
+
+          <Button size="lg" style={{backgroundColor:"#df5a31", color:"#fff",padding:"15px", paddingLeft:"40px", paddingRight:"40px", marginBottom:"75px", }}
+           className="click">
+            Sign up
           </Button>
-
     </div>
     
   );

@@ -1,13 +1,19 @@
-import React from "React";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import form from './Form';
-function Routes () {
-    return(
+import React from 'react';
+import './App.css';
+// import Navbar from './components/Header';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Home from './pages';
 
-        <Router>
-            <Route path="/Form" element = {<Form/>} />
-        </Router>
-    )
-}
-
-export default Routes;
+function App() {
+    return (
+      <Router>
+        {/* <Navbar /> */}
+            <Routes>
+            {/* <Route path='/' exact component={Home} /> */}
+            
+            </Routes>
+      </Router>
+    );
+  }
+    
+  export default App;
