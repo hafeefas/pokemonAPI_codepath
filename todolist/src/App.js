@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbarr from './Components/Navbarr';
+import SignUpButton from './Components/SignUpButton';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
 
       <Navbarr></Navbarr>
+      {/* <SignUpButton></SignUpButton> */}
 
             <div
                 className="image-fluid come-in"
