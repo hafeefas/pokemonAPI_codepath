@@ -14,7 +14,7 @@ function App() {
       <Navbarr></Navbarr>
       {/* <SignUpButton></SignUpButton> */}
 
-            <div
+            <header
                 className="image-fluid come-in"
                 style={{
                 backgroundImage: "url('https://static.vecteezy.com/system/resources/previews/007/565/380/non_2x/watercolor-floral-background-with-brush-and-floral-frame-for-horizontal-banner-backdrop-wedding-invitation-thank-you-card-wallpaper-free-photo.jpg')",
@@ -44,7 +44,7 @@ function App() {
             Log In
         </Button>
             
-            </div>
+            </header>
 
               <div
                 className="image-fluid come-in"
@@ -65,21 +65,23 @@ function App() {
 {/* First Container */}
 
       <Container style={{paddingTop:"8%"}}>
-            <div style={{textAlign:"left", float:"left", paddingTop:"100px" ,paddingLeft:"30px"}}>
-              <h2 className="AppBold" style={{paddingTop:"5%",  textAlign:"left", padding:"5px"}}> 
-                <p>
-                  Add your tasks. <br/>
-                  Organize your life. <br/>
-                  Achieve more everyday. <br/>
-                </p>
-                </h2>
+            <article style={{textAlign:"left", float:"left", paddingTop:"100px" ,paddingLeft:"30px"}}>
+              <header>
+                <h2 className="AppBold" style={{paddingTop:"5%",  textAlign:"left", padding:"5px"}}> 
+                    <p>
+                      Add your tasks. <br/>
+                      Organize your life. <br/>
+                      Achieve more everyday. <br/>
+                    </p>
+                  </h2>
+                </header>
                 <p id='font' style={{textAlign:"left", fontSize:"15px", color:"#575757", float:"left"}}>
                   <p>Add tasks like “Read work emails every day at 10am” </p>
                   <p id="left">to fill your to-do list in seconds using Todoist’s </p>
                   <p id="left">powerful natural language recognition and recurring </p>
                   dates.
                 </p>
-              </div>
+              </article>
               <img src="https://d33wubrfki0l68.cloudfront.net/ec621e304136ab6d4f3220e6d89019fd9341e86b/78171/images/ghost/2022-08-22-how-to-set-your-notion-to-do-list-as-desktop-wallpaper-automatically-free-notion-template/10.png" 
                 className="come-in"
                 style={{width:"70vh", maxWidth:"100%", minHeight:"27px", height:"50vh",marginBottom:"130px", border:"solid", borderRadius:"20px", borderColor:"#575757", float:"right"
@@ -93,22 +95,23 @@ function App() {
       <Container>
             <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2021/03/1728d022d80c229cdc8e7d786e17f008.jpg@1200w_0e.webp" className='come-in'
               style={{width:"70vh", maxWidth:"100%", minHeight:"27px", height:"50vh", border:"solid", borderRadius:"20px", borderColor:"#575757", float:"left", clear:"right", marginRight:"120px"}}/>
-              <div style={{textAlign:"left", float:"left", paddingTop:"5%"
+              <article style={{textAlign:"left", float:"left", paddingTop:"5%"
             }}>
+              <header>
                 <h2 className="AppBold" style={{textAlign:"left",  padding:"5px", clear:"right", paddingLeft:"30px"}}> 
                   Add your tasks.
                   <p> Organize your life.
                   <p> Achieve more everyday.</p>
                   </p>
                 </h2>
-
+              </header>
               <p id='font' className="float clearfix" style={{textAlign:"left", paddingLeft:"30px",  fontSize:"15px", color:"#575757", float:"right", clear:"right", marginBottom:"20%"}}>
                 <p>Add tasks like “Read work emails every day at 10am” </p>
                 <p id="left">to fill your to-do list in seconds using Todoist’s </p>
                 <p id="left">powerful natural language recognition and recurring </p>
                 dates.
                 </p>
-              </div>
+              </article>
       </Container>
               
     <br/>
@@ -116,14 +119,14 @@ function App() {
           style = {{maxWidth:"100%", width:"150vh", marginTop:"10%", borderRadius:"20px"}}
           />
 
-          <div style={{border:"solid whitesmoke", borderRadius:"20px"}}> </div>
-          
+          <footer style={{border:"solid whitesmoke", borderRadius:"20px"}}> </footer>
+      <footer>
         <p style={{paddingTop:"8%"}}> Get organized now. </p>
-
           <Button size="lg" style={{backgroundColor:"#df5a31", color:"#fff",padding:"15px", paddingLeft:"40px", paddingRight:"40px", marginBottom:"75px", }}
            className="click">
             Sign up
           </Button>
+      </footer>
     </div>
     
   );
