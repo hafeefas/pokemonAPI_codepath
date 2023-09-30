@@ -2,44 +2,46 @@ document.addEventListener("DOMContentLoaded", () => {
     const pokeList = document.getElementById("pokemonList");
     console.log("Hello");
 
-    fetch("http://localhost:8080/getPokemon")
+    fetch("http://localhost:6415/getDatabasePokemon")
     .then((response) => response.json())
     .then((data) => {
-        data.results.forEach((pokemon) => {
-            const card = document.createElement("div");
-            card.classList.add("pokeCardStyling");
+        // Check if data is an array and not undefined
+        if (Array.isArray(data)) {
+            data.forEach((pokemon) => {
+                const card = document.createElement("div");
+                card.classList.add("pokeCardStyling");
 
-            // Create an element for the Pokémon ID
-            const idElement = document.createElement("div");
-            idElement.classList.add("pokemon-id");
-            const pokemonId = getPokemonIdFromUrl(pokemon.url); // Extracts the Pokémon ID from the URL
-            idElement.textContent = `#${pokemonId}`;
+                // Create an element for the Pokémon ID
+                const idElement = document.createElement("div");
+                idElement.classList.add("pokemon-id");
+                idElement.textContent = `#${pokemon.id}`;
 
-            // Create an element for the Pokémon name and set its text content
-            const nameElement = document.createElement("div");
-            nameElement.classList.add("pokemon-name");
-            nameElement.textContent = pokemon.name;
+                // Create an element for the Pokémon name and set its text content
+                const nameElement = document.createElement("div");
+                nameElement.classList.add("pokemon-name");
+                nameElement.textContent = pokemon.name;
 
-            // Create an element for the Pokémon image
-            const imageElement = document.createElement("img");
-            imageElement.classList.add("pokemon-image");
-            imageElement.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`;
-            imageElement.alt = pokemon.name;
+                // Create an element for the Pokémon image
+                const imageElement = document.createElement("img");
+                imageElement.classList.add("pokemon-image");
+                imageElement.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`;
+                imageElement.alt = pokemon.name;
 
-            // Add the ID, name, and image elements to the card
-            card.appendChild(idElement);
-            card.appendChild(nameElement);
-            card.appendChild(imageElement);
+                // Add the ID, name, and image elements to the card
+                card.appendChild(idElement);
+                card.appendChild(nameElement);
+                card.appendChild(imageElement);
 
-            card.addEventListener("click", () => {
-                // Redirect to the Pokémon detail page with the Pokémon's name as a query parameter
-                window.location.href = `./individualCard/pokeDetails.html?name=${pokemon.name}&id=${pokemonId}`;
+                card.addEventListener("click", () => {
+                    // Redirect to the Pokémon detail page with the Pokémon's name as a query parameter
+                    window.location.href = `./individualCard/pokeDetails.html?name=${pokemon.name}&id=${pokemon.id}`;
+                });
+
+                pokeList.appendChild(card);
             });
-          
-
-            pokeList.appendChild(card);
-            console.log(data, "testing...");
-        });
+        } else {
+            console.log("Data received is not an array:", data);
+        }
     })
     .catch((error) => {
         console.log("error", error);
