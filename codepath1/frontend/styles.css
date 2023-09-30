@@ -1,0 +1,73 @@
+/* styles.css */
+
+.pokeCardStyling {
+    display: inline-block;
+    width: 47%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.pokeCardStyling:hover {
+    transform: scale(1.0); /* Scale the card by 5% on hover */
+}
+
+.pokemon-name {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#header{
+    background-image: url('https://eskipaper.com/images/pokemon-wallpaper-9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: #fff; 
+    text-align: center;
+    padding-top: 200px;
+}
+#title{
+    text-align: center;
+    border-bottom: solid whitesmoke;
+}
+
+
+/* Styles for the Pokémon Detail Page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Vertical centering of content */
+    text-align: center;
+    background-color: #f2f2f2; /* Background color for the detail page */
+}
+
+.pokemon-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.pokemonDetailImage {
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+    border: 3px solid #007bff; /* Add a blue border around the image */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
