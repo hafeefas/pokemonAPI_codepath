@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-const PORT = "8080"
+const PORT = "5432"
 const axios = require("axios")
 const cors = require("cors");
 
@@ -25,6 +25,6 @@ app.get("/getPokemon", async (req, res) => {
     }
 })
 
-serverRun()
+serverRun();
 
-module.exports = serverRun
+module.exports = serverRun;
