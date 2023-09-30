@@ -1,0 +1,70 @@
+
+.pokeCardStyling {
+    display: inline-block;
+    width: 47.5%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.pokeCardStyling:hover {
+    transform: scale(1.05); /* Scale the card by 5% on hover */
+}
+
+.pokemon-name {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#header{
+    background-image: url('https://eskipaper.com/images/pokemon-wallpaper-9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: #fff; 
+    text-align: center;
+    padding-top: 200px;
+}
+#title{
+    text-align: center;
+    border-bottom: solid whitesmoke;
+}
+
+
+/* Styles for the Pokémon Detail Page */
+#pokemonDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f2f2f2; /* Background color for the detail page */
+}
+
+.pokemon-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#pokemonDetailImage {
+    height: 500px;
+}
+
+#pokemonDetail{
+
+}
